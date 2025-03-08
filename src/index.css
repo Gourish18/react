@@ -1,0 +1,131 @@
+/* body{
+  background-color: rgb(234, 234, 224);
+  color: black;
+}
+.hover_effect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 450px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  cursor: pointer;
+  border: 1px solid black;
+}
+.hover_effect:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  background-color: #121212; /* Dark theme */
+  color: #f5c518; /* IMDB-style golden color */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  height: 40px; /* Ensures uniform height */
+  overflow: hidden;
+}
+
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #d1d1d1;
+}
+
+/* Movie Card Styling */
+.hover_effect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 260px;
+  height: 380px;
+  margin: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  background-color: #1c1c1c;
+  border: 2px solid #f5c518;
+}
+
+.hover_effect:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 30px rgba(245, 197, 24, 0.6);
+}
+
+/* Movie Images */
+.hover_effect img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.hover_effect:hover img {
+  filter: brightness(0.8);
+}
+
+/* Movie Container */
+.movie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 30px;
+}
+/* Filter Button Styling */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-buttons button {
+  background-color: #f5c518; /* IMDb Gold */
+  color: #121212;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.filter-buttons button:hover {
+  background-color: #d4a314;
+}
+
+/* Movie Card */
+.movie-card {
+  max-width: 300px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
